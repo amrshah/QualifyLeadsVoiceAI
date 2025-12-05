@@ -1,0 +1,7 @@
+{
+  "name": "QualifyAI - Live Lead Bot",
+  "description": "A real-time voice conversational agent powered by Gemini 2.5 Live API, designed to qualify leads for your business based on customizable criteria.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
