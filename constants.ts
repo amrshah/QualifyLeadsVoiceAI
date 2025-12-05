@@ -12,7 +12,8 @@ export const DEFAULT_CONFIG: BusinessConfig = {
     "What is your expected timeline to start the project?",
     "What monthly marketing budget are you considering?"
   ],
-  toneOfVoice: 'friendly'
+  toneOfVoice: 'friendly',
+  apiKey: ''
 };
 
 export const LIVE_MODEL = 'gemini-2.5-flash-native-audio-preview-09-2025';
