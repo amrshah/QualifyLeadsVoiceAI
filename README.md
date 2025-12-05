@@ -54,9 +54,10 @@ This project is configured for GitHub Pages hosting.
     This will generate a `dist` folder containing the static assets.
 
 3.  **Deploy**:
-    Push the contents of the `dist` folder to your `gh-pages` branch, or configure your GitHub repository to deploy from the main branch's `dist` folder (if using a custom workflow).
-
-    *Recommended: Use a GitHub Action to build and deploy automatically on push.*
+    ```bash
+    npm run deploy
+    ```
+    This command will automatically build the project and push the `dist` folder to the `gh-pages` branch.
 
 ## Tech Stack
 
