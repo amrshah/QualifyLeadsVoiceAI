@@ -4,7 +4,6 @@ export interface BusinessConfig {
   productDescription: string;
   qualificationQuestions: string[];
   toneOfVoice: 'professional' | 'friendly' | 'enthusiastic' | 'direct';
-  apiKey?: string;
 }
 
 export enum SessionStatus {

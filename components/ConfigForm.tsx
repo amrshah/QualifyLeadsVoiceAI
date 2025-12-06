@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BusinessConfig } from '../types';
-import { Plus, Trash2, Save, Sparkles, Lock } from 'lucide-react';
+import { Plus, Trash2, Save, Sparkles } from 'lucide-react';
 
 interface ConfigFormProps {
   config: BusinessConfig;
@@ -62,26 +62,6 @@ const ConfigForm: React.FC<ConfigFormProps> = ({ config, onSave, onStart }) => {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6 bg-slate-800/50 p-8 rounded-xl border border-slate-700">
-        <div className="bg-blue-900/20 border border-blue-500/30 p-4 rounded-lg mb-6">
-          <label className="block text-sm font-medium text-blue-200 mb-1 flex items-center gap-2">
-            <Lock size={16} />
-            Gemini API Key (Optional)
-          </label>
-          <input
-            type="password"
-            name="apiKey"
-            value={formData.apiKey || ''}
-            onChange={handleChange}
-            placeholder={process.env.API_KEY ? "Using protected environment key" : "Enter your Gemini API Key here"}
-            className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all placeholder:text-slate-600"
-          />
-          <p className="text-xs text-slate-400 mt-1">
-            {process.env.API_KEY
-              ? "A default key is configured, but you can override it here."
-              : "Required for the demo to work. Your key is never stored."}
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-sm font-medium text-slate-300 mb-1">Business Name</label>
